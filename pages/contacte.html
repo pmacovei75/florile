@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFEE</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <div class="container-logo" >
+             
+            <a href="index.html">
+                <img class="img-log" src="../images/logo1.png" alt="логотип"  width="50px"/>
+            </a>
+       </div>
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="contacte.html">Contacte</a>
+            
+        </nav>
+    </header>
+        
+    
+    <div class="conteiner">
+        <aside>
+            <a href="bauturi.html">&#127865; Напитки</a>
+            <a href="salate.html">🌱Салаты</a>
+            <a href="pasta.html">&#127837;Паста</a>
+            <a href="pizza.html">&#127829;Пицца</a>
+
+        </aside>
+
+        <main>
+            <h1> <i class="fal fa-x-ray"></i>Контакты</h1>
+            <hr/>
+            <div class="container-contacte">
+                <div class="row">
+                    <div class="col-5 forma-conact" >
+                        <h3 class="center"> Oставьте сообщение &#9993;</i></h3>
+                        <form autocomplete="off" id="formular">
+                            <input type="text" name="nume" id="nume" placeholder="Фамилия*" required /> <br />
+                            <input type="text" name="prenume" id="prenume" placeholder="Имя*" required /> <br />
+                            <input type="email" name="email" id="email" placeholder="Email*" required /> <br />
+                            <input type="text"  name="tema" id="tema" placeholder="Тема*" required /> <br />
+                            <textarea name="mesaj" id="mesaj" placeholder="Cообщение" rows="10"></textarea> <br />
+                            <input class="transmit" type="button" value="Отправить" onclick="send()"/>
+                        </form>
+                    </div>
+                    <div class="col-5 telefon-contact">
+                        <h3 class="center">Контактные данные ✆</h3>
+                        <b>Центральный офис</b> 
+                        <a href="tel:+37360416601">601416601</a><br/> <br/>
+                        <b>Заказы</b> 
+                        <a href="tel:+37360416601">601416601</a><br/> <br/>
+                        <b>Сервис</b> 
+                        <a href="tel:+37360416601">601416601</a><br/> <br/>
+
+                    </div>
+
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-5 adres-contact">
+                        <h3>🏚 Адрес:</h3>
+                        <b>Тараклия:</b> <span>ул. М. Еминеску</span><br/> <br/>
+                        <b>Кагул:</b> <span>ул. М. Еминеску</span><br/> <br/>
+                        <b>Комрат:</b> <span>ул. М. Еминеску</span><br/> <br/>
+                        
+                    </div>
+                    <div class="col-5">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.908900636191!2d28.668610715446338!3d45.91313117910892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b7b4c32b0c3b4d%3A0xee91194cba6ff469!2sUniversitatea%20de%20stat%20%E2%80%9EGrigore%20%C8%9Aamblac%E2%80%9D%20din%20Taraclia!5e0!3m2!1sru!2s!4v1669833010055!5m2!1sru!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <h2>Pizza Pronto 2021 &#169; </h2>
+    </footer>
+    <script src="../JS/send.js"></script>
+</body>
+</html>

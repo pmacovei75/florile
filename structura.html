@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFEE</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container-logo" >
+             
+            <a href="index.html">
+                    <img class="img-log" src="images/logo1.png" alt="логотип"  width="50px"/>
+            </a>
+       </div>
+            
+        <nav>
+            <a href="pages/menu.html">Mеню</a>
+            <a href="pages/contacte.html">Contacte</a>
+        </nav>
+    </header>
+        
+    
+    <div class="conteiner">
+        <aside>
+            <a href="#">Напитки</a>
+            <a href="#">Салаты</a>
+            <a href="#">Паста</a>
+            <a href="#">Пицца</a>
+
+        </aside>
+
+        <main>
+            <h1> Применение Java Script</h1>
+            <p id="rez">Изменение размер шрифта</p>
+            <button onclick="functie()">Меняется размер</button>
+            <p id="rez1">Изменение color</p>
+            <button onclick="functie1()">Меняется color</button>
+            <hr />
+
+            <p id="et1">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - удаление контента (innerHTML)</p>
+            <button onclick="functie2()">Click</button>
+            <p id="et2">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - изменение контента (innerHTML)</p>
+            <button onclick="functie3()">Click</button>
+            <hr/>
+            <p id="et3" onclick="functie4()">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - удаление контента (innerHTML)</p>
+           
+            <p id="et4">Нажми на кнопку чтобы увидеть результат манипулирования содержанием элемента - изменение контента (innerHTML)</p>
+            <button onclick="functie5()">Click</button>
+            <hr />
+            <h1> Variabile</h1>
+            <p id="et5"></p>
+            <p id="et6"></p>
+            <p id="et7"></p>
+            <hr />
+            <h1> Variabile</h1>
+            <p id="et8"></p>
+           
+            <hr />
+
+            <p id="sal"></p>
+            <hr/>
+            <h2>Правильный вес</h2>
+            <p id="ves">Ваш вес должен быть = </p>
+            <hr />
+            <H1>дата и время</H1>
+            <button onclick="getElementById('data').innerHTML=Date();">Дата на сегодня:</button>
+            <p id="data"></p>
+            <hr/>
+            <p id="nume2"> Меня зовут </p>
+            <input type="text" id="nume1" value=""/>
+            <p id="dat1">Мне </p>
+            <input type="number" id="dat2" value=""/>
+            <hr />
+            <p>Нажмите кнопку для визуализации равенства двух значений - 5 равно с "5" как значение и как тип?</p>
+            <button onclick="Comparatie()">Click</button>
+            <p id="eta1"></p>
+
+            <hr/>
+            <p>Выберите опцию определяющую ваш пол:</p>
+            <select id="aleg">
+            <option value="barbat">Мужской</option>
+            <option value="femeie">Женский</option>
+            </select>
+            <button onclick="Verificare()">Click</button>
+            <p id="pol"></p>
+
+
+        </main>
+
+
+    </div>
+
+    <footer>
+        <h2>Pizza Pronto 2021 &#169; </h2>
+    </footer>
+
+    <script>
+        function Verificare() {
+            var alegere=document.getElementById("aleg").value;
+            var sex1=(alegere=="barbat")? "господин!!!":"Госпожа!!!";
+            document.getElementById("pol").innerHTML="Здраствуйте" + " "+ sex1;
+        }
+
+       
+       function Comparatie() {
+        var x=5;
+        document.getElementById("eta1").innerHTML=(x==="5");
+       }
+       
+       document.getElementById("nume1").addEventListener("change",
+       function () {
+        var valoare = document.getElementById("nume1").value;
+        document.getElementById("nume2").innerHTML= document.getElementById("nume2").innerHTML +""+ valoare;
+       } )
+       document.getElementById("dat2").addEventListener("change",
+       function () {
+        var valoare1 = document.getElementById("dat2").value;
+        document.getElementById("dat1").innerHTML= document.getElementById("dat1").innerHTML +""+ valoare1 + "лет";
+       } )
+       
+       
+       
+       
+       
+       
+       function ves(visota) {
+            return visota - 100;
+        }
+
+        document.getElementById("ves").innerHTML= "Ваш вес должен быть ="+""+ves(180)+ " "+ "kg";
+
+        function salariu(sal,adaos) {
+            return sal+adaos;
+        }
+        document.getElementById("sal").innerHTML= salariu(3000,500)
+
+       
+        var numel="Ivanov";
+        var familia=nume + " " + "Ivan";
+        var varstar=familia + " " +35;
+            
+        document.getElementById("et8").innerHTML=varstar;
+    </script>
+    
+</body>
+</html>
